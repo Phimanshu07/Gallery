@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mContainer"
+    android:orientation="vertical"
+    tools:context=".ViewImage">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingStart="10dp"
+        android:id="@+id/layout_top_btn"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:src="@drawable/ic_baseline_chevron_left_24"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:id="@+id/Image_Title"
+            android:text="Image Title"
+            android:gravity="center_horizontal"
+            android:background="@android:color/transparent"
+            android:layout_toEndOf="@+id/back_btn"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/back_btn"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/layout_top_btn"
+        android:id="@+id/card"
+        android:layout_marginTop="30dp"
+        android:layout_above="@+id/relative_layout_btn_for_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/main_image"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_launcher_background" />
+
+        <ImageView
+            android:id="@+id/previous"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="-30dp"
+            android:layout_marginLeft="-25dp"
+            android:layout_marginBottom="279dp"
+
+            android:src="@drawable/previous" />
+
+        <ImageView
+            android:id="@+id/next"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="-25dp"
+            android:layout_marginEnd="-21dp"
+            android:layout_marginRight="-21dp"
+            android:layout_marginBottom="279dp"
+            android:src="@drawable/next" />
+
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/relative_layout_btn_for_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true">
+
+        <ImageView
+            android:id="@+id/share"
+            android:layout_width="71dp"
+            android:layout_height="37dp"
+            android:layout_marginLeft="25dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/share" />
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>
